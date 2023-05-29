@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --ff-title: "Staatliches", sans-serif;
+    --ff-p: "Palanquin", sans-serif;
+  
+    font-size: 62.5%;
+    --fs-heading: 4rem;
+    --fs-heading-p: 2rem;
+    --fs-heading-pm: 1.4rem;
+  
+    --bg-primary: hsl(233, 100%, 97%);
+    --bg-secondary: hsl(218, 17%, 62%);
+    --bg-heading: hsl(275, 18%, 79%);
+    --bg-heading-s: hsl(312, 91%, 96%);
+  
+    --fc-heading: hsl(0, 0%, 100%);
+    --fc-heading-p: hsl(274, 84%, 12%);
+    --fc-heading-s: hsl(232, 17%, 35%);
+  }
+  
+  body {
+    min-width: 38.4rem;
+    background: var(--bg-primary);
+  }
+  
+  .page {
+    max-width: 38.4rem;
+    margin: 0 auto;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  header {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 2.9rem;
+    
+    background-color: var(--bg-secondary);
+  }
+  
+  header img {
+    margin: 3.2rem 0;
+    max-width: 13.7rem;
+  }
+  
+  header h1 {
+    font-family: var(--ff-title);
+    font-size: var(--fs-heading);
+    font-weight: 400;
+    line-height: 3.4rem;
+    
+    letter-spacing: 0.05em;
+    text-shadow: 0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+    
+    padding: 0.8rem 0;
+    
+    color: var(--fc-heading);
+    background-color: var(--bg-heading);
+  }
+  
+  main {
+    display: grid;
+    gap: 6.3rem;
+    text-align: center;
+   
+    margin: 1.4rem auto 6rem;
+    padding: 0 3.2rem;
+  }
+  
+  main p {
+    font-family: var(--ff-p);
+    font-size: var(--fs-heading-pm);
+    font-weight: 400;
+    line-height: 1.5rem;
+  
+    color: var(--fc-heading-p);
+  }
+  
+  main .cards div:nth-child(1) img,
+  main .cards div:nth-child(3) img {
+    height: 25rem;
+  }
+  
+  main .cards div:nth-child(2) img,
+  main .cards div:nth-child(4) img {
+    height: 45rem;
+  }
+  
+  .cards {
+    display: grid;
+    gap: 3.2rem;
+  }
+  
+  .card {
+    position: relative;
+  }
+  
+  .card img {
+    object-fit: cover;
+    border-radius: 2rem;
+  }
+  
+  .card h2 {
+    font-family: var(--ff-title);
+    font-size: var(--fs-heading-p);
+    font-weight: 400;
+    line-height: 3.4rem;
+    text-align: center;
+    
+    width: fit-content;
+    letter-spacing: 0.05em;
+    
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    
+    padding: 0 2.3rem;
+    
+    color: var(--fc-heading-s);
+    background-color: var(--bg-heading-s);
+    border-radius: 2rem;
+  }
+  

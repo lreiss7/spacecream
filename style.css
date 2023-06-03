@@ -97,11 +97,21 @@ main .cards div:nth-child(4) img {
 
 .card {
   position: relative;
+
+  
 }
 
 .card img {
   object-fit: cover;
   border-radius: 2rem;
+
+  transition: all 200ms;
+
+  animation: leftrigth 700ms forwards;
+}
+
+.card img:hover {
+  transform: scale(1.1);
 }
 
 .card h2 {
@@ -123,4 +133,31 @@ main .cards div:nth-child(4) img {
   color: var(--fc-heading-s);
   background-color: var(--bg-heading-s);
   border-radius: 2rem;
+
+  animation: rigthleft 700ms 500ms backwards;
 }
+
+@keyframes rigthleft {
+  0% {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+}
+
+@keyframes leftrigth {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+

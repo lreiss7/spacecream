@@ -36,10 +36,9 @@ Você pode visualizar o layout do projeto através dos links:
 
 ## 💪Desafio feito por
 
-<p align="center">
 | Luan Reis | 🙅‍♂️
-</p>
 
-- [LinkDin](https://www.linkedin.com/in/lreiss7)
+
+- [LinkedIn](https://www.linkedin.com/in/lreiss7)
 - [GitHub](https://github.com/lreiss7)
 ---
